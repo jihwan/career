@@ -25,7 +25,7 @@ export function Strengths({ strengths }: StrengthsProps) {
         {strengths.map((strength) => {
           const Icon = iconMap[strength.title] ?? Package;
           return (
-            <Card key={strength.title}>
+            <Card key={strength.title} className="break-inside-avoid">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-base">
                   <Icon className="size-4 text-muted-foreground" />

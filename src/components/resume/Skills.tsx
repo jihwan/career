@@ -10,7 +10,7 @@ interface SkillsProps {
 // 기술 그룹 카드 (설명형 또는 라벨/값 목록형)
 function SkillCard({ group }: { group: SkillGroup }) {
   return (
-    <Card size="sm">
+    <Card size="sm" className="break-inside-avoid">
       <CardHeader>
         <CardTitle>{group.title}</CardTitle>
       </CardHeader>

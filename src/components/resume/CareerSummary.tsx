@@ -7,7 +7,9 @@ interface CareerSummaryProps {
 
 // 경력 요약: 회사, 직급/직책, 기간, 주요 역할을 한눈에 보는 표 (모바일은 카드형)
 export function CareerSummary({ careers }: CareerSummaryProps) {
-  const gridClass = "md:grid md:grid-cols-[9rem_11rem_13rem_1fr] md:gap-x-4";
+  // A4 인쇄 폭(약 703px)은 md(768px) 미만이므로 print 변형으로 표 레이아웃을 강제
+  const gridClass =
+    "md:grid md:grid-cols-[6.5rem_8rem_9rem_minmax(0,1fr)] md:gap-x-4 print:grid print:grid-cols-[6.5rem_8rem_9rem_minmax(0,1fr)] print:gap-x-4";
 
   return (
     <section aria-labelledby="career-summary">
@@ -25,7 +27,7 @@ export function CareerSummary({ careers }: CareerSummaryProps) {
           {careers.map((career) => (
             <li
               key={`${career.company}-${career.period}`}
-              className={`space-y-1 px-4 py-3 text-sm md:items-start md:space-y-0 ${gridClass}`}
+              className={`space-y-1 px-4 py-3 text-sm break-keep md:items-start md:space-y-0 print:items-start print:space-y-0 ${gridClass}`}
             >
               <span className="block font-semibold">{career.company}</span>
               <span className="block">{career.rank}</span>

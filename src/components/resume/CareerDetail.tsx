@@ -49,7 +49,7 @@ export function CareerDetail({ careers }: CareerDetailProps) {
       <SectionTitle id="career-detail">경력 상세</SectionTitle>
       <div className="space-y-5">
         {careers.map((career, index) => (
-          <Card key={`${career.company}-${career.period}`} className="break-inside-avoid py-0">
+          <Card key={`${career.company}-${career.period}`} className="py-0">
             {/* 최근 경력은 펼침, 오래된 경력은 접힘 (인쇄 시 모두 펼침) */}
             <details open={index < openCount} className="group/details">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-4 py-4 [&::-webkit-details-marker]:hidden">

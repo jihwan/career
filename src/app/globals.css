@@ -129,13 +129,29 @@
   }
 }
 
-/* 인쇄(PDF 저장) 시 여백과 카드 분할 최소화 */
+/* 인쇄(PDF 저장): 웹과 동일한 색상·레이아웃을 A4로 출력 */
 @media print {
   @page {
+    size: A4;
     margin: 12mm;
+  }
+  /* 배경색, 배지, 표 헤더 색상이 인쇄에서 빠지지 않도록 강제 */
+  html {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
   body {
     background: #fff;
+  }
+  /* 경력 상세처럼 긴 카드는 내부 요소 단위로 쪽을 나누고, 작은 카드는 컴포넌트에서 break-inside-avoid 적용 */
+  li,
+  tr,
+  dl > div {
+    break-inside: avoid;
+  }
+  h2,
+  h4 {
+    break-after: avoid;
   }
   /* 접힌 경력 상세도 인쇄/PDF에서는 모두 펼침 */
   details::details-content {
