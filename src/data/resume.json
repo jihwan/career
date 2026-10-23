@@ -1,0 +1,261 @@
+{
+  "profile": {
+    "name": "황지환",
+    "nameEn": "Ji Hwan, Hwang",
+    "headline": "제조·반도체·디스플레이 도메인 경력 21년, Smart Factory 소프트웨어 개발 및 프로젝트 리더",
+    "intro": [
+      "하이테크 소재 제조 분야에서 제품 개발, 구축, 현장 적용까지 수행한 Smart Factory 전문 도메인 개발자",
+      "MES/EAP/SPC/FDC/YMS 등 Enterprise Application 개발 역량 보유",
+      "문제 정의, 제품 방향성 결정, 리스크 관리 중심의 PM/PL 경험",
+      "제조 AI(RAG, AI Agent) 기술 학습 및 기존 제조 시스템과의 결합 추진"
+    ],
+    "email": "zhwan.hwang@gmail.com"
+  },
+  "strengths": [
+    {
+      "title": "프로젝트 리더십",
+      "points": [
+        "PM/PL로 분석, 설계, 구축 전 단계를 총괄 (SystemIC SmartLFDC, BMOT MES/EAP/SPC/FMB, CSOT EDA/SPC, 국책과제)",
+        "개발팀장으로 문제 정의, 제품 방향성 결정, 리스크 관리 수행"
+      ]
+    },
+    {
+      "title": "도메인 전문성",
+      "points": [
+        "반도체·디스플레이 제조 도메인 21년, MES/EAP/SPC/FDC/YMS/FMB 전 영역 구축",
+        "삼성전자, SKHynix, SystemIC, BOE, BMOT, CSOT 등 다수 고객사 적용"
+      ]
+    },
+    {
+      "title": "제품 개발",
+      "points": [
+        "aim platform, SPC 엔진, EDA 쿼리 엔진, EAP 개발 도구 등 플랫폼·제품 개발",
+        "프로젝트 구축 경험을 제품으로 전환"
+      ]
+    },
+    {
+      "title": "AI/AX 전환",
+      "points": [
+        "Claude Code, Cursor, Copilot 기반 AI 활용 개발",
+        "RAG, AI Agent 학습 및 기존 제조 시스템과 결합 추진"
+      ]
+    }
+  ],
+  "careers": [
+    {
+      "company": "(주)TWISE",
+      "rank": "부장 / 개발팀장",
+      "period": "2021. 04 ~ 현재",
+      "duration": "5년 7개월",
+      "summary": "SystemIC SmartLFDC PM, ETOS/RCS Manager·ROS 구축, EAP 개발 도구 제품 개발",
+      "achievements": [
+        "SystemIC DUV 장비 로그 수집/분석 시스템(SmartLFDC)을 PM으로 구축하여 장비 데이터 기반 분석 체계 확보",
+        "EAP 개발 도구를 제품화하여 EAP 개발 표준 도구 확보"
+      ],
+      "roles": [
+        "SmartLFDC 분석/설계, 데이터베이스 구축 총괄 (PM)",
+        "DUV 장비 data extractor 개발",
+        "SystemIC ETOS/RCS Manager 구축",
+        "대학 연구 FAB ROS, ROS Manager 구축",
+        "EAP 개발 도구 제품 개발"
+      ],
+      "tech": [
+        { "label": "Language", "value": "Java" },
+        { "label": "Framework", "value": "Spring Boot, SmartFX" },
+        { "label": "Database", "value": "Oracle 12c" },
+        { "label": "기타", "value": "Unix, Tibrv, Claude Code" }
+      ],
+      "projects": [
+        {
+          "name": "SystemIC SmartLFDC",
+          "period": "2023. 08 ~ 2025. 12 (2년 5개월)",
+          "role": "PM – 분석, 설계, 데이터베이스 구축, DUV 장비 data extractor 개발",
+          "tech": "Java, SmartFX, Oracle 12c, Tibrv, Unix"
+        }
+      ]
+    },
+    {
+      "company": "(주)티라유텍",
+      "rank": "부장 / 개발자",
+      "period": "2020. 02 ~ 2021. 03",
+      "duration": "1년 2개월",
+      "summary": "SKHynix M16 MES EIS 모듈 개발, 설비 시나리오 테스트",
+      "achievements": [
+        "SKHynix M16 MES 구축에 참여하여 설비 운영 시나리오 검증 완료"
+      ],
+      "roles": [
+        "EIS 모듈 개발",
+        "설비 간 운영 시나리오 테스트"
+      ],
+      "tech": [
+        { "label": "Language", "value": "Java" },
+        { "label": "Framework", "value": "SmartFX" },
+        { "label": "Database", "value": "Oracle 12c" },
+        { "label": "기타", "value": "Unix, Tibrv" }
+      ],
+      "projects": []
+    },
+    {
+      "company": "(주)에임시스템",
+      "rank": "수석 / 제품개발팀 PL",
+      "period": "2012. 04 ~ 2020. 02",
+      "duration": "7년 11개월",
+      "summary": "BMOT MES/EAP/SPC/FMB, CSOT EDA/SPC, 국책과제(YMS) PL",
+      "achievements": [
+        "BMOT Micro OLED MES/EAP/SPC/FMB를 PL로 구축하여 제조 전 영역 시스템 적용",
+        "YMS 품질분석 시스템 국책과제 수행 및 CSOT EDA/SPC 시스템 구축으로 해외 고객사 적용"
+      ],
+      "roles": [
+        "BMOT MES/EAP/SPC/FMB 분석, 설계, 구축 (PL)",
+        "CSOT 데이터 수집 모듈, EDA 분석 쿼리 엔진 개발 (PL)",
+        "국책과제 aim platform, SPC 엔진 개발 (PL)",
+        "SFA OHT 반송시스템 테스트용 Virtual Vehicle 개발"
+      ],
+      "tech": [
+        { "label": "Language", "value": "Java" },
+        { "label": "Framework", "value": "Spring Framework" },
+        { "label": "Database", "value": "Oracle 11g/12c" },
+        { "label": "기타", "value": "Linux, Windows, Tibrv" }
+      ],
+      "projects": [
+        {
+          "name": "BMOT MES/EAP/SPC/FMB",
+          "period": "2018. 11 ~ 2019. 12 (1년 2개월)",
+          "role": "PL – 분석, 설계, MES/EAP/SPC/FMB 수행",
+          "tech": "Java, Spring Framework, Oracle 12c, Tibrv, Linux"
+        },
+        {
+          "name": "CSOT EDA/SPC",
+          "period": "2015. 03 ~ 2016. 04 (1년 2개월)",
+          "role": "PL – 분석, 설계, 데이터 수집 모듈, EDA 분석 쿼리 엔진",
+          "tech": "Java, Spring Framework, Oracle 11g, Tibrv, Linux"
+        },
+        {
+          "name": "국책사업 (YMS)",
+          "period": "2013. 06 ~ 2015. 01 (1년 8개월)",
+          "role": "PL – 분석, 설계, aim platform, SPC 엔진",
+          "tech": "Java, Spring Framework, Oracle 11g, Tibrv, Windows"
+        },
+        {
+          "name": "SFA TCS System",
+          "period": "2012. 11 ~ 2013. 03 (5개월)",
+          "role": "개발자 – Virtual OHT 개발",
+          "tech": "Java, Spring Framework, Oracle 11g, Tibrv, Windows"
+        }
+      ]
+    },
+    {
+      "company": "(주)비스텔",
+      "rank": "과장 / 제품개발팀 개발자",
+      "period": "2010. 09 ~ 2012. 03",
+      "duration": "1년 7개월",
+      "summary": "PSK Asher SmartTool(EES) DataCollection Planning 모듈 개발",
+      "achievements": [
+        "PSK Asher 장비 SmartTool(EES) 구축에 참여하여 장비 데이터 수집 체계 확보"
+      ],
+      "roles": [
+        "DataCollection Planning 모듈 개발 (Smart Tool, 2011. 05 ~ 2012. 01)"
+      ],
+      "tech": [
+        { "label": "Language", "value": "Java" },
+        { "label": "Framework", "value": "Spring Framework" },
+        { "label": "Database", "value": "Oracle 10g" },
+        { "label": "기타", "value": "Windows" }
+      ],
+      "projects": []
+    },
+    {
+      "company": "(주)플로소프트",
+      "rank": "대리 / 제품개발팀 개발자",
+      "period": "2008. 05 ~ 2010. 08",
+      "duration": "2년 4개월",
+      "summary": "삼성전자 천안/온양 반송 모니터링 report·dashboard, 탕정 DataCollection 구조 개선",
+      "achievements": [
+        "삼성전자 천안/온양 사업장에 반송 모니터링 시스템 적용"
+      ],
+      "roles": [
+        "MCS 반송 report, dashboard 개발",
+        "삼성전자 탕정 DataCollection 구조 개선"
+      ],
+      "tech": [
+        { "label": "Language", "value": "Java, JSP, Javascript" },
+        { "label": "Framework", "value": "Spring Framework" },
+        { "label": "Database", "value": "Oracle 10g" },
+        { "label": "기타", "value": "Unix, Tomcat" }
+      ],
+      "projects": []
+    },
+    {
+      "company": "(주)에임시스템",
+      "rank": "대리 / 제품개발팀 개발자",
+      "period": "2004. 11 ~ 2008. 04",
+      "duration": "3년 6개월",
+      "summary": "Hynix M11 MES(EIS server, Dcol), nanoMC EAP 개발 Tool, BOE Hydis AWS",
+      "achievements": [
+        "SI 프로젝트 수행을 통해 Smart Factory 도메인 및 프로젝트 전주기 역량 확보"
+      ],
+      "roles": [
+        "Hynix M11 MES(EIS server) 모듈 및 Dcol 구축",
+        "nanoMC EAP 개발 Tool, APM R&D",
+        "BOE Hydis AWS 구축 (공정 warning dashboard)"
+      ],
+      "tech": [
+        { "label": "Language", "value": "Java, JSP" },
+        { "label": "Framework", "value": "Spring Framework, Laszlo" },
+        { "label": "Database", "value": "Oracle 9i/10g" },
+        { "label": "기타", "value": "Unix, Windows NT, Tomcat, Tibrv" }
+      ],
+      "projects": []
+    }
+  ],
+  "skills": [
+    {
+      "title": "Java / Spring",
+      "description": "Spring Framework, Spring Boot, Spring Batch, Spring Data, JPA 기반 Smart Factory Enterprise Application 개발 경험. MES/EAP/SPC 시스템 설계 및 구축 수행."
+    },
+    {
+      "title": "Smart Factory 도메인",
+      "items": [
+        { "label": "생산/설비", "value": "MES, EAP, FMB, SECS1 driver" },
+        { "label": "품질", "value": "DataCollection, FDC, SPC, YMS, EDA" },
+        { "label": "고객사", "value": "삼성전자, SKHynix, SystemIC, BOE, BMOT, CSOT, SFA, PSK" }
+      ]
+    },
+    {
+      "title": "Javascript",
+      "description": "jQuery, Vue, DevExtreme, Websocket 기반 dashboard/UI 개발 경험."
+    },
+    {
+      "title": "Database / Infra",
+      "description": "Oracle, MariaDB / Unix, Linux / Tibrv(MOM) / Tomcat(WAS)"
+    }
+  ],
+  "tools": [
+    {
+      "title": "AI Dev Tools",
+      "description": "Claude Code, Cursor, Copilot 활용 개발. RAG, AI Agent 기술 학습 중."
+    },
+    {
+      "title": "DevTools",
+      "description": "Git, Svn, Maven, Nexus, Ant, Docker"
+    }
+  ],
+  "education": [
+    {
+      "major": "정보통신공학 학사",
+      "graduated": "2004. 02 졸업",
+      "school": "한국외국어대학교"
+    }
+  ],
+  "trainings": [
+    { "institute": "KOSTA", "course": "Reactive Programming" },
+    { "institute": "KOSTA", "course": "MSA와 Microservice 설계" },
+    { "institute": "KOSTA", "course": "MongoDB & BigData DBA 과정" },
+    { "institute": "KOSTA", "course": "JUnit, TDD, 그리고 CI(Continuous Integration)" },
+    { "institute": "KOSTA", "course": "스크럼(scrum) 기반 Agile 프로젝트 실습" },
+    { "institute": "", "course": "한국 스프링 사용자 그룹 컨퍼런스, 세미나 참가" }
+  ],
+  "certificates": [
+    { "name": "정보처리기사", "acquired": "2004. 12" }
+  ]
+}
