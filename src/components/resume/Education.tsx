@@ -1,15 +1,21 @@
-import { Award, GraduationCap } from "lucide-react";
-import type { Certificate, Education as EducationData, Training } from "@/types/resume";
+import { Award, ExternalLink, GraduationCap } from "lucide-react";
+import type {
+  Certificate,
+  Education as EducationData,
+  Training,
+  TrainingLink,
+} from "@/types/resume";
 import { SectionTitle } from "./SectionTitle";
 
 interface EducationProps {
   education: EducationData[];
   trainings: Training[];
+  trainingLinks: TrainingLink[];
   certificates: Certificate[];
 }
 
 // 학력, 이수/교육, 자격증 섹션
-export function Education({ education, trainings, certificates }: EducationProps) {
+export function Education({ education, trainings, trainingLinks, certificates }: EducationProps) {
   return (
     <section aria-labelledby="education" className="space-y-8">
       <div>
@@ -52,6 +58,24 @@ export function Education({ education, trainings, certificates }: EducationProps
             </li>
           ))}
         </ul>
+        {/* 교육훈련 이력 증빙: 새 탭에서 열기 (noopener로 opener 접근 차단) */}
+        {trainingLinks.length > 0 && (
+          <ul className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium break-inside-avoid">
+            {trainingLinks.map((link) => (
+              <li key={link.url}>
+                <a
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-primary hover:underline"
+                >
+                  {link.label}
+                  <ExternalLink className="size-3.5" aria-hidden />
+                </a>
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </section>
   );

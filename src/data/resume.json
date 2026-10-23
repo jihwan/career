@@ -255,6 +255,10 @@
     { "institute": "KOSTA", "course": "스크럼(scrum) 기반 Agile 프로젝트 실습" },
     { "institute": "", "course": "한국 스프링 사용자 그룹 컨퍼런스, 세미나 참가" }
   ],
+  "trainingLinks": [
+    { "label": "교육훈련 이력 1 (PDF)", "url": "https://jihwan.github.io/resume/HRDNet1.pdf" },
+    { "label": "교육훈련 이력 2 (PDF)", "url": "https://jihwan.github.io/resume/HRDNet2.pdf" }
+  ],
   "certificates": [
     { "name": "정보처리기사", "acquired": "2004. 12" }
   ]

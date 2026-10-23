@@ -63,6 +63,12 @@ export interface Training {
   course: string;
 }
 
+/** 교육훈련 이력 증빙 링크 (새 탭에서 열림) */
+export interface TrainingLink {
+  label: string;
+  url: string;
+}
+
 /** 자격증 */
 export interface Certificate {
   name: string;
@@ -78,5 +84,6 @@ export interface Resume {
   tools: SkillGroup[];
   education: Education[];
   trainings: Training[];
+  trainingLinks: TrainingLink[];
   certificates: Certificate[];
 }
