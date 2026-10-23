@@ -6,7 +6,10 @@ import { extname, join, normalize, resolve } from "node:path";
 
 const rootDir = resolve(import.meta.dirname, "..");
 const outDir = join(rootDir, "out");
-const pdfPath = join(rootDir, "public", "resume.pdf");
+// PDF_OUT 환경변수로 출력 경로 변경 가능 (기본: public/resume.pdf)
+const pdfPath = process.env.PDF_OUT ?? join(rootDir, "public", "resume.pdf");
+// next.config.ts의 basePath 기본값과 동일하게 유지할 것
+const basePath = process.env.BASE_PATH ?? "/career";
 
 // 확장자별 MIME 타입
 const mimeTypes = {
@@ -42,7 +45,9 @@ function findChromePath() {
 // out/ 디렉터리를 임시 포트로 정적 서빙
 function startStaticServer() {
   const server = createServer((req, res) => {
-    const urlPath = decodeURIComponent(new URL(req.url, "http://localhost").pathname);
+    const rawPath = decodeURIComponent(new URL(req.url, "http://localhost").pathname);
+    // basePath 접두사를 제거하여 out/ 내 실제 경로로 매핑
+    const urlPath = rawPath.startsWith(basePath) ? rawPath.slice(basePath.length) || "/" : rawPath;
     let filePath = normalize(join(outDir, urlPath));
     // out/ 바깥 경로 접근 차단
     if (!filePath.startsWith(outDir)) {
@@ -94,12 +99,14 @@ async function main() {
   const server = await startStaticServer();
   try {
     const { port } = server.address();
-    await printPdf(chromePath, `http://127.0.0.1:${port}/`);
+    await printPdf(chromePath, `http://127.0.0.1:${port}${basePath}/`);
   } finally {
     server.close();
   }
-  // 정적 export 결과물에도 최신 PDF 포함
-  copyFileSync(pdfPath, join(outDir, "resume.pdf"));
+  // 정적 export 결과물에도 최신 PDF 포함 (기본 출력 경로일 때만)
+  if (!process.env.PDF_OUT) {
+    copyFileSync(pdfPath, join(outDir, "resume.pdf"));
+  }
   console.log(`PDF 생성 완료: ${pdfPath} (${statSync(pdfPath).size} bytes)`);
 }
 
