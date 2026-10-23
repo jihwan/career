@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:pdf": "next build && node scripts/generatePdf.mjs",
     "start": "next start",
     "lint": "eslint"
   },

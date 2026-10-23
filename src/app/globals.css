@@ -7,8 +7,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-noto-sans-kr), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   --font-heading: var(--font-sans);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -55,7 +55,7 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+  --primary: oklch(0.42 0.14 255);
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
@@ -125,6 +125,41 @@
     @apply bg-background text-foreground;
   }
   html {
-    @apply font-sans;
+    @apply font-sans scroll-smooth;
+  }
+}
+
+/* 인쇄(PDF 저장): 웹과 동일한 색상·레이아웃을 A4로 출력 */
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+  /* 배경색, 배지, 표 헤더 색상이 인쇄에서 빠지지 않도록 강제 */
+  html {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  body {
+    background: #fff;
+  }
+  /* 경력 상세처럼 긴 카드는 내부 요소 단위로 쪽을 나누고, 작은 카드는 컴포넌트에서 break-inside-avoid 적용 */
+  li,
+  tr,
+  dl > div {
+    break-inside: avoid;
+  }
+  h2,
+  h4 {
+    break-after: avoid;
+  }
+  /* 접힌 경력 상세도 인쇄/PDF에서는 모두 펼침 */
+  details::details-content {
+    content-visibility: visible;
+    display: block;
+  }
+  main {
+    max-width: none;
+    padding: 0;
   }
 }
