@@ -56,7 +56,9 @@ export function CareerDetail({ careers }: CareerDetailProps) {
                 <div>
                   <CardTitle className="text-lg">{career.company}</CardTitle>
                   <p className="mt-1 text-sm text-muted-foreground">
-                    {career.rank} · {career.period} ({career.duration})
+                    {/* 총 기간이 없으면 괄호도 표시하지 않음 */}
+                    {career.rank} · {career.period}
+                    {career.duration && ` (${career.duration})`}
                   </p>
                 </div>
                 <ChevronDown

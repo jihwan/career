@@ -33,7 +33,10 @@ export function CareerSummary({ careers }: CareerSummaryProps) {
               <span className="block">{career.rank}</span>
               <span className="block text-muted-foreground">
                 {career.period}
-                <span className="ml-1 text-xs">({career.duration})</span>
+                {/* 총 기간이 없으면 괄호도 표시하지 않음 */}
+                {career.duration && (
+                  <span className="ml-1 text-xs">({career.duration})</span>
+                )}
               </span>
               <span className="block leading-relaxed">{career.summary}</span>
             </li>
