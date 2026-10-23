@@ -8,7 +8,7 @@
     "build": "next build",
     "build:pdf": "next build && node scripts/generatePdf.mjs",
     "predeploy": "npm run build:pdf",
-    "deploy": "gh-pages -d out -t true",
+    "deploy": "gh-pages -d out -t",
     "start": "next start",
     "lint": "eslint"
   },
