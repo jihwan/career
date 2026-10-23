@@ -256,6 +256,7 @@
     { "institute": "", "course": "한국 스프링 사용자 그룹 컨퍼런스, 세미나 참가" }
   ],
   "trainingLinks": [
+    { "label": "정보처리기사", "url": "https://jihwan.github.io/resume/hrd.png" },
     { "label": "교육훈련 이력 1 (PDF)", "url": "https://jihwan.github.io/resume/HRDNet1.pdf" },
     { "label": "교육훈련 이력 2 (PDF)", "url": "https://jihwan.github.io/resume/HRDNet2.pdf" }
   ],
