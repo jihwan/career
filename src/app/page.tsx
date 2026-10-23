@@ -23,6 +23,7 @@ export default function Home() {
         <Education
           education={resume.education}
           trainings={resume.trainings}
+          trainingLinks={resume.trainingLinks}
           certificates={resume.certificates}
         />
       </main>
