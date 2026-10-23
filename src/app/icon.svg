@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <!-- 배경: 이력서 포인트 컬러(primary)를 sRGB로 변환한 값 -->
+  <rect width="64" height="64" rx="14" fill="#004b97"/>
+  <!-- 'J'와 'H'는 폰트 없이 라운드 스트로크로 직접 그려 환경과 무관하게 동일하게 렌더링 -->
+  <g fill="none" stroke="#ffffff" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M27 17V37a8 8 0 0 1-8 8a8 8 0 0 1-7-4"/>
+    <path d="M38 17V47M52 17V47M38 32H52"/>
+  </g>
+</svg>
