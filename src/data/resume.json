@@ -2,7 +2,7 @@
   "profile": {
     "name": "황지환",
     "nameEn": "JI HWAN, HWANG",
-    "headline": "제조·반도체·디스플레이 도메인 경력 21년, Smart Factory 소프트웨어 개발 및 프로젝트 리더",
+    "headline": "제조·반도체·디스플레이 도메인 경력 21년, Smart Factory 직접 구현하는 리더",
     "intro": [
       "하이테크 제조 분야에서 제품 개발, 구축, 현장 적용까지 수행한 Smart Factory 전문 도메인 개발자",
       "MES/EAP/SPC/FDC/YMS 등 Enterprise Application 개발 역량 보유",
@@ -47,17 +47,16 @@
       "rank": "부장 / 개발팀장",
       "period": "2021. 04 ~ 현재",
       "duration": "",
-      "summary": "SystemIC SmartLFDC PM, ETOS/RCS Manager·ROS 구축, EAP 개발 도구 제품 개발",
+      "summary": "SystemIC SmartLFDC PM, ETOS/RCS Manager·ROS 구축, EAP 개발 도구 BackEnd 개발",
       "achievements": [
-        "SystemIC DUV 장비 로그 수집/분석 시스템(SmartLFDC)을 PM으로 구축하여 장비 데이터 기반 분석 체계 확보",
-        "EAP 개발 도구를 제품화하여 EAP 개발 표준 도구 확보"
+        "SystemIC DUV 장비 로그 수집/분석 시스템(SmartLFDC)을 PM으로 구축하여 장비 데이터 기반 분석 체계 확보"
       ],
       "roles": [
         "SmartLFDC 분석/설계, 데이터베이스 구축 총괄 (PM)",
         "DUV 장비 data extractor 개발",
         "SystemIC ETOS/RCS Manager 구축",
         "대학 연구 FAB ROS, ROS Manager 구축",
-        "EAP 개발 도구 제품 개발"
+        "EAP 개발 도구 BackEnd 개발"
       ],
       "tech": [
         { "label": "Language", "value": "Java" },
