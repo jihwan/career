@@ -11,11 +11,11 @@ const notoSansKr = Noto_Sans_KR({
 export const metadata: Metadata = {
   title: "황지환 | 이력서",
   description:
-    "제조·반도체·디스플레이 도메인 경력 21년, Smart Factory 소프트웨어 개발 및 프로젝트 리더 황지환의 이력서",
+    "AI가 만든 코드까지 책임지는, 반도체·디스플레이 제조 시스템 직접 설계·구현 시니어 개발자 황지환의 이력서",
   openGraph: {
     title: "황지환 | 이력서",
     description:
-      "제조·반도체·디스플레이 도메인 경력 21년, Smart Factory 소프트웨어 개발 및 프로젝트 리더",
+      "AI가 만든 코드까지 책임지는, 반도체·디스플레이 제조 시스템 직접 설계·구현 시니어 개발자 황지환의 이력서",
     locale: "ko_KR",
     type: "profile",
   },
