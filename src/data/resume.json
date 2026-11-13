@@ -2,42 +2,43 @@
   "profile": {
     "name": "황지환",
     "nameEn": "JI HWAN, HWANG",
-    "headline": "제조·반도체·디스플레이 도메인, Smart Factory 직접 구현하는 리더",
+    "headline": "AI가 만든 코드까지 책임지는, 반도체·디스플레이 제조 시스템 직접 설계·구현 시니어 개발자",
     "intro": [
       "하이테크 제조 분야에서 제품 개발, 구축, 현장 적용까지 수행한 Smart Factory 전문 도메인 개발자",
       "MES/EAP/SPC/FDC/YMS 등 Enterprise Application 개발 역량 보유",
-      "문제 정의, 제품 방향성 결정, 리스크 관리 중심의 PM/PL 경험",
-      "제조 AI(RAG, AI Agent) 기술 학습 및 기존 제조 시스템과의 결합 추진"
+      "아키텍처 설계부터 ETL 개발까지 직접 완결하고, 일정·범위 리스크를 주도적으로 판단하는 PM/PL 경험",
+      "AI는 생산성 도구일 뿐, 생성된 코드의 검증과 통제는 개발자의 책임이라는 원칙으로 단위 기능별 점증 개발·리뷰 수행"
     ],
     "email": "zhwan.hwang@gmail.com"
   },
   "strengths": [
     {
-      "title": "프로젝트 리더십",
+      "title": "책임 - 직접 검증하고 통제",
       "points": [
-        "PM/PL로 분석, 설계, 구축 전 단계를 총괄 (SystemIC SmartLFDC, BMOT MES/EAP/SPC/FMB, CSOT EDA/SPC, 국책과제)",
-        "개발팀장으로 문제 정의, 제품 방향성 결정, 리스크 관리 수행"
+        "AI가 생성한 코드는 대규모 일괄 생성·리팩토링에 쓰지 않고, 단위 기능별로 점증 개발하며 직접 리뷰, rule/skill로 품질 기준 통제",
+        "ETL 오류를 원인과 함께 오류 테이블에 저장하도록 설계하여 예외를 추적·재처리 가능하게 구성 (SmartLFDC)"
+      ]
+    },
+    {
+      "title": "판단 - 선택과 근거",
+      "points": [
+        "장비 중심의 단순한 구조 + XML/프로그램 인자 설정 기반 확장으로 복잡도를 억제, 프로젝트를 제품으로 전환하고 팀의 운영 비용을 최소화 (aim platform, SPC 엔진, EDA 쿼리 엔진)",
+        "개발자 투입 지연 시 개발 범위를 축소하고 선행 준비를 마친 뒤 2차 프로젝트를 역제안하여 일정 리스크와 사업 기회를 함께 관리",
+        "전체 아키텍처 수립, DB 설계, ETL 전 영역, 장비 data extractor까지 직접 완결 (개발 비중 50%)"
+      ]
+    },
+    {
+      "title": "성과 - 결과로 입증",
+      "points": [
+        "SmartLFDC 도입으로 분석 시간 10분 → 1분 이내 단축, 고객 신뢰를 바탕으로 후속 수주 확보 (3억원, 6개월, 3명)",
+        "사내 우수사원 표창 2회 (에임시스템 2018, TWISE 2024) - 프로젝트 성공 및 매출 기여"
       ]
     },
     {
       "title": "도메인 전문성",
       "points": [
         "반도체·디스플레이 제조 도메인, MES/EAP/SPC/FDC/YMS/FMB 전 영역 구축",
-        "삼성전자, SKHynix, SystemIC, BOE, BMOT, CSOT 등 다수 고객사 적용"
-      ]
-    },
-    {
-      "title": "제품 개발",
-      "points": [
-        "aim platform, SPC 엔진, EDA 쿼리 엔진, EAP 개발 도구 등 플랫폼·제품 개발",
-        "프로젝트 구축 경험을 제품으로 전환"
-      ]
-    },
-    {
-      "title": "AI/AX 전환",
-      "points": [
-        "Claude Code, Cursor, Copilot 기반 AI 활용 개발",
-        "RAG, AI Agent 학습 및 기존 제조 시스템과 결합 추진"
+        "삼성전자, SKHynix, SystemIC, BOE, BMOT, CSOT 등 다수 고객사 적용, 해외 현지 상주 PL 2회 (CSOT, BMOT)"
       ]
     }
   ],
@@ -49,10 +50,12 @@
       "duration": "",
       "summary": "SystemIC SmartLFDC PM, ETOS/RCS Manager·ROS 구축, EAP 개발 도구 BackEnd 개발",
       "achievements": [
-        "SystemIC DUV 장비 로그 수집/분석 시스템(SmartLFDC)을 PM으로 구축하여 장비 데이터 기반 분석 체계 확보"
+        "SystemIC DUV 장비 로그 수집/분석 시스템(SmartLFDC)을 PM으로 구축하여 분석 시간 10분 → 1분 이내로 단축",
+        "프로젝트 성과와 고객 신뢰를 기반으로 후속 수주 확보 (3억원, 6개월, 3명)"
       ],
       "roles": [
-        "SmartLFDC 분석/설계, 데이터베이스 구축 총괄 (PM)",
+        "SmartLFDC 분석/설계, 데이터베이스 구축 총괄 (PM, 개발 50%)",
+        "전체 아키텍처 수립 및 ETL 전 영역 개발 (이벤트 수신 ETL, 시계열 분리 저장, 파티셔닝·인덱스 적용, 오류 원인 저장)",
         "DUV 장비 data extractor 개발",
         "SystemIC ETOS/RCS Manager 구축",
         "대학 연구 FAB ROS, ROS Manager 구축",
@@ -232,7 +235,7 @@
   "tools": [
     {
       "title": "AI Dev Tools",
-      "description": "Claude Code, Cursor, Copilot 활용 개발. RAG, AI Agent 기술 학습 중."
+      "description": "Claude Code, Cursor, Copilot 활용 개발. 도구는 보조이고 설계·검증·통제는 개발자 책임이라는 원칙으로, 단위 기능별 점증 개발 및 rule/skill 기반 리뷰 수행."
     },
     {
       "title": "DevTools",
